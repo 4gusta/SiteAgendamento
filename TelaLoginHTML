@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>LOGIN - SEDUC</title>
+</head>
+<body>
+  <div class="container">
+      <div class="left"></div>
+      <div class="right">
+        <form>
+          <header>
+            <h2>BEM VINDO</h2>
+            <div class="comentario">
+            <p>Faça login em sua conta para continuar</p>
+            </div>
+          </header>
+
+          <div class="input-box-email">
+            <i class="bx bxs-user"></i>
+            <input type="email" placeholder="professor.seduc.ce.gov.br" required>
+          </div>
+
+          <div class="input-box-password">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" placeholder="Senha" required>
+          </div>
+
+          <div class="lembrar-senha">
+            <a href="#">Esqueceu sua senha?</a>
+          </div>
+
+          <div class="botao">
+            <button type="submit">LOGIN</button>
+          </div>
+
+          <div class="registro">
+            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+          </div>
+        </form>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
