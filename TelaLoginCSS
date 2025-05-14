@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    height: 100px;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    height: 100vh;
+    background: url("/imagens/fundo_tela_22.png") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;  /* <-- Esta linha alinha à direita */
+    align-items: center;
+    height: 100vh;
+    padding-right: 60px;
+
+}
+
+.botao {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0%;
+
+}
+
+.botao button {
+    background-color: #90c190;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+
+}
+
+.botao button:hover {
+    background-color: #243607;
+}
+
+.lembrar-senha {
+    text-align: right;
+}
+
+.lembrar-senha a {
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+}
+
+.registro a {
+    color: gray;
+
+    text-decoration: none;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.comentario {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-box-email {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-box-email i {
+    position: absolute;
+    top: 50%;
+    left: 16px; /* distância da borda esquerda */
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 20px;
+    pointer-events: none;
+
+}
+
+.input-box-email input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    /* espaço à esquerda para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-box-password {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-box-password i {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.input-box-password input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    /* espaço à esquerda para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
