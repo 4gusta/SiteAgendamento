@@ -21,20 +21,22 @@ body {
 }
 
 .left {
-    flex: 1;
+    flex: 13%;
+    display: flex;
     height: 100vh;
     background: url("/imagens/fundo_tela_22.png") no-repeat center center;
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 .right {
     flex: 1;
     display: flex;
-    justify-content: flex-end;  /* <-- Esta linha alinha à direita */
+    justify-content: flex-end;
     align-items: center;
     height: 100vh;
-    padding-right: 60px;
+    padding-right: 240px;
 
 }
 
@@ -85,9 +87,7 @@ body {
 .input-box {
     position: relative;
     margin-bottom: 20px;
-
 }
-
 .input-box i {
     position: absolute;
     top: 50%;
@@ -116,7 +116,7 @@ h2 {
 .input-box-email i {
     position: absolute;
     top: 50%;
-    left: 16px; /* distância da borda esquerda */
+    left: 16px;
     transform: translateY(-50%);
     color: #777;
     font-size: 20px;
@@ -127,7 +127,6 @@ h2 {
 .input-box-email input {
     width: 100%;
     padding: 10px 10px 10px 40px;
-    /* espaço à esquerda para o ícone */
     border: 1px solid #ccc;
     border-radius: 25px;
     outline: none;
@@ -153,7 +152,6 @@ h2 {
 .input-box-password input {
     width: 100%;
     padding: 10px 10px 10px 40px;
-    /* espaço à esquerda para o ícone */
     border: 1px solid #ccc;
     border-radius: 25px;
     outline: none;
