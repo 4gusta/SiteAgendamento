@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="agendado.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Calendário de Aulas</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo-perfil">
+      <img src="perfil.png" alt="Perfil">
+      <span>Perfil</span>
+    </div>
+    <nav>
+      <ul>
+        <li>Início</li>
+        <li>Calendário</li>
+        <li>Horários</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="calendario">
+    <div class="icone-canto"><i class="fas fa-calendar-alt"></i></div>
+
+    <!-- Segunda -->
+    <div class="dia">
+      <h3>Seg - 04/07</h3>
+      <div class="aula vermelha">Aula 1</div>
+      <div class="aula cinza">Aula 2</div>
+      <div class="aula cinza">Aula 3</div>
+      <div class="aula cinza">Aula 4</div>
+      <div class="aula cinza">Aula 5</div>
+      <div class="aula cinza">Aula 6</div>
+      <div class="aula cinza">Aula 7</div>
+      <div class="aula cinza">Aula 8</div>
+      <div class="aula cinza">Aula 9</div>
+    </div>
+
+    <!-- Terça -->
+    <div class="dia">
+      <h3>Ter - 05/07</h3>
+      <div class="aula vermelha">Aula 1</div>
+      <div class="aula verde">Aula 2</div>
+      <div class="aula cinza">Aula 3</div>
+      <div class="aula cinza">Aula 4</div>
+      <div class="aula cinza">Aula 5</div>
+      <div class="aula cinza">Aula 6</div>
+      <div class="aula cinza">Aula 7</div>
+      <div class="aula cinza">Aula 8</div>
+      <div class="aula cinza">Aula 9</div>
+    </div>
+
+    <!-- Quarta -->
+    <div class="dia">
+      <h3>Qua - 06/07</h3>
+      <div class="aula vermelha">Aula 1</div>
+      <div class="aula cinza">Aula 2</div>
+      <div class="aula cinza">Aula 3</div>
+      <div class="aula cinza">Aula 4</div>
+      <div class="aula cinza">Aula 5</div>
+      <div class="aula cinza">Aula 6</div>
+      <div class="aula cinza">Aula 7</div>
+      <div class="aula cinza">Aula 8</div>
+      <div class="aula cinza">Aula 9</div>
+    </div>
+
+    <!-- Quinta -->
+    <div class="dia">
+      <h3>Qui - 07/07</h3>
+      <div class="aula vermelha">Aula 1</div>
+      <div class="aula cinza">Aula 2</div>
+      <div class="aula cinza">Aula 3</div>
+      <div class="aula cinza">Aula 4</div>
+      <div class="aula cinza">Aula 5</div>
+      <div class="aula cinza">Aula 6</div>
+      <div class="aula cinza">Aula 7</div>
+      <div class="aula cinza">Aula 8</div>
+      <div class="aula cinza">Aula 9</div>
+    </div>
+
+    <!-- Sexta -->
+    <div class="dia">
+      <h3>Sex - 08/07</h3>
+      <div class="aula vermelha">Aula 1</div>
+      <div class="aula cinza">Aula 2</div>
+      <div class="aula cinza">Aula 3</div>
+      <div class="aula cinza">Aula 4</div>
+      <div class="aula cinza">Aula 5</div>
+      <div class="aula cinza">Aula 6</div>
+      <div class="aula cinza">Aula 7</div>
+      <div class="aula cinza">Aula 8</div>
+      <div class="aula cinza">Aula 9</div>
+    </div>
+
+    <!-- Botão flutuante -->
+    <div class="botao-decima-aula">Décima aula</div>
+  </div>
+
+</body>
+</html>
