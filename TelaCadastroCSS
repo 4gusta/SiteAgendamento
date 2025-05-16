@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100px;
+    display: flex;
+}
+
+.left {
+    flex: 3;
+    display: flex;
+    height: 100vh;
+    background: url("../imagens/fundo_tela_22.png") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    padding-right: 240px;
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0%;
+}
+
+.botao button {
+    background-color: #90c190;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+}
+
+.botao button:hover {
+    background-color: #243607;
+}
+
+.logar a {
+    color: gray;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.comentario {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.comentario p {
+    font-size: 16px;
+}
+
+
+.input-box-email,
+.input-box-password {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-box-email i,
+.input-box-password i {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.input-box-email input,
+.input-box-password input {
+    width: 120%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    position: center;
+}
