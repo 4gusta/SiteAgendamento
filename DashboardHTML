@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Página Agenda</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo-perfil">
+      <img src="perfil.png" alt="Perfil">
+      <span>Perfil</span>
+    </div>
+    <nav>
+      <ul>
+        <li>Início</li>
+        <li>Calendário</li>
+        <li>Horários</li>
+      </ul>
+      <hr>
+    </nav>
+  </header>
+
+  <div class="main">
+    <!-- Formas decorativas -->
+    <div class="shape1"></div>
+    <div class="shape2"></div>
+    <h1 class="bem-vindo-texto">Bem-vindo ao<br>agenda virtual</h1>
+
+    <!-- Botões -->
+    <!-- Botão flutuante como link -->
+    <a href="agenda.html" class="checar-agenda">checar agenda</a>
+    <button class="botao-avisos">AVISOS</button>
+
+    <!-- Logo institucional -->
+    <img src="logo.jpeg" alt="Logo Institucional" class="logo-inferior" />
+  </div>
+
+</body>
+</html>
