@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>CADASTRO - SEDUC</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <form action="/PagDashboard/index.html" method="post">
+
+                <header>
+                    <h2>CRIAR UMA CONTA</h2>
+                    <div class="comentario">
+                        <p>Crie sua conta para prosseguir</p>
+                    </div>
+                </header>
+
+                <div class="input-box-email">
+                    <i class="bx bxs-user"></i>
+                    <input type="email" placeholder="professor.seduc.ce.gov.br" required>
+                </div>
+
+                <div class="input-box-password">
+                    <i class="bx bxs-lock-alt"></i>
+                    <input type="password" placeholder="Senha" required>
+                </div>
+
+                <div class="input-box-password">
+                    <i class="bx bxs-lock"></i>
+                    <input type="password" name="confirmar_senha" placeholder="Confirmar senha" required />
+                </div>
+                <div class="mensagem-erro" id="mensagem-erro"></div>
+
+                <div class="botao">
+                    <button type="submit">CADASTRAR-SE</button>
+                </div>
+                <div class="logar">
+                    <p>Já tem uma conta? <a href="/PagLogin/index.html">Faça login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
