@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>USUÁRIO - SEDUC</title>
+</head>
+
+<body>
+    <div class="FundoTela">
+        <header>
+            <div class="logo-perfil">
+                <img src="perfil.png" alt="Perfil">
+                <span><a href="../PagPerfil/index.html">Perfil</a></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../PagDashboard/index.html">Início</a></li>
+                    <li>Calendário</li>
+                    <li>Horários</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="usuário">
+        </div>
+    </div>
+</body>
+
+</html>
