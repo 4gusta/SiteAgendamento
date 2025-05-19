@@ -11,11 +11,11 @@
   <header>
     <div class="logo-perfil">
       <img src="perfil.png" alt="Perfil">
-      <span>Perfil</span>
+      <span><a href="../PagPerfil/index.html">Perfil</a></span>
     </div>
     <nav>
       <ul>
-        <li>Início</li>
+        <li><a href="../PagDashboard/index.html">Início</a></li>
         <li>Calendário</li>
         <li>Horários</li>
       </ul>
@@ -31,7 +31,7 @@
 
     <!-- Botões -->
     <!-- Botão flutuante como link -->
-    <a href="agenda.html" class="checar-agenda">checar agenda</a>
+    <a href="../PagAgendaH/index.html" class="checar-agenda">checar agenda</a>
     <button class="botao-avisos">AVISOS</button>
 
     <!-- Logo institucional -->
