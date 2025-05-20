@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="login.css">
+  <title>LOGIN - SEDUC</title>
+</head> <!--conectar no dashboard-->
+
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <form>
+        <header>
+          <h2>BEM VINDO</h2>
+          <div class="comentario">
+            <p>Faça login em sua conta para continuar</p>
+          </div>
+        </header>
+
+        <div class="input-box-email">
+          <i class="bx bxs-user"></i>
+          <input type="email" id="usuario" name="usuario" placeholder="professor.seduc.ce.gov.br" required>
+        </div>
+
+        <div class="input-box-password">
+          <i class="bx bxs-lock-alt"></i>
+          <input type="password" id="senha" placeholder="Senha" required>
+          <i class="bx bx-show" id="toggleSenha" style="cursor: pointer;"></i>
+        </div>
+
+        <div class="lembrar-senha">
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+
+        <div class="botao">
+          <button type="button" onclick="validarlogin()">LOGIN</button>
+        </div>
+
+        <div class="registro">
+          <p>Não tem uma conta? <br> <a href="Cadastro.html" class="botao-cadastro">Cadastre-se</a></p>
+        </div>
+        <img src="logo.jpeg" alt="logo" class="logo-inferior">
+      </form>
+    </div>
+  </div>
+
+  <script>
+  // Mostra ou oculta a senha
+  const toggleSenha = document.getElementById("toggleSenha");
+  const inputSenha = document.getElementById("senha");
+
+  toggleSenha.addEventListener("click", function () {
+    const tipoAtual = inputSenha.getAttribute("type");
+    if (tipoAtual === "password") {
+      inputSenha.setAttribute("type", "text");
+      toggleSenha.classList.remove("bx-show");
+      toggleSenha.classList.add("bx-hide");
+    } else {
+      inputSenha.setAttribute("type", "password");
+      toggleSenha.classList.remove("bx-hide");
+      toggleSenha.classList.add("bx-show");
+    }
+  });
+
+  // Validação do login
+  function validarlogin() {
+    const emailDigitado = document.getElementById("usuario").value.trim();
+    const senhaDigitada = document.getElementById("senha").value;
+
+    const dadosSalvos = localStorage.getItem("usuarioCadastro");
+
+    if (!dadosSalvos) {
+      alert("Nenhum usuário cadastrado. Faça o cadastro primeiro.");
+      return;
+    }
+
+    const usuario = JSON.parse(dadosSalvos);
+
+    if (emailDigitado === usuario.email && senhaDigitada === usuario.senha) {
+      alert("Login realizado com sucesso!");
+      window.location.href = "Dashboard.html"; // redireciona para o painel
+    } else {
+      alert("Email ou senha incorretos.");
+    }
+  }
+</script>
+</body>
+</html>
