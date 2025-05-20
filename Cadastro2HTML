@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="cadastro.css">
+  <title>cadastro</title>
+</head>
+<body>
+  <div class="container">        <!--conectar no dashboard-->
+      <div class="left"></div>
+      <div class="right">
+        <form id="formCadastro">
+          <header>
+            <h2>Cadastre-se</h2>
+            <div class="comentario">
+            <p>Crie sua conta para prosseguir</p>
+            </div>
+          </header>
+
+          <div class="input-box-email">
+            <i class="bx bxs-user"></i>
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+
+          <div class="input-box-password">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" id="senha" placeholder="Senha" required>
+          </div>
+
+          <div class="input-box-password">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" id="confirmaSenha" placeholder="Confirmar Senha">
+          </div>
+
+          <div class="botao">
+            <button type="submit">CADASTRE-SE</button>
+          </div>
+          <div class="erro" id="messagemErro"></div>
+          <img src="logo.jpeg" alt="logo" class="logo-inferior">
+        </form>
+      </div>
+  </div>
+
+  <script>
+  document.getElementById("formCadastro").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value.trim();
+    const senha = document.getElementById("senha").value;
+    const confirmaSenha = document.getElementById("confirmaSenha").value;
+    const erroDiv = document.getElementById("messagemErro");
+
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    if (!emailValido) {
+      erroDiv.textContent = "Email inválido.";
+      return;
+    }
+
+    if (senha !== confirmaSenha) {
+      erroDiv.textContent = "As senhas não coincidem.";
+      return;
+    }
+
+    const usuario = { email, senha };
+    localStorage.setItem("usuarioCadastro", JSON.stringify(usuario));
+    alert("Cadastro realizado com sucesso!");
+
+    window.location.href = "Dashboard.html"; // ajuste aqui se o nome do arquivo for diferente
+  });
+</script>
+
+</body>
+
+</html>
